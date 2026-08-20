@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahad Jaseem — DevOps Engineer</title>
+<meta name="description" content="Fahad Jaseem — DevOps Engineer specializing in AWS, Kubernetes, Terraform, and CI/CD automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== PIPELINE PROGRESS BAR (fixed, fills as you scroll) ===== -->
+<div class="pipeline-rail" aria-hidden="true">
+  <div class="pipeline-rail__fill" id="railFill"></div>
+</div>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <a href="#top" class="nav__brand">fahad<span class="dim">@</span>jaseem</a>
+  <nav class="nav__links">
+    <a href="#stack">stack</a>
+    <a href="#experience">experience</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="terminal" role="img" aria-label="Terminal showing whoami command output for Fahad Jaseem, DevOps Engineer">
+      <div class="terminal__bar">
+        <span class="dot dot--red"></span><span class="dot dot--amber"></span><span class="dot dot--green"></span>
+        <span class="terminal__title">fahad@ops-01: ~</span>
+      </div>
+      <div class="terminal__body">
+        <p class="line"><span class="prompt">$</span> whoami</p>
+        <h1 class="typed-name" id="typedName"></h1>
+        <p class="line line--role" id="typedRole"></p>
+        <p class="line line--muted">
+          <span class="prompt">$</span> cat location.txt<br>
+          <span class="out">Gurgaon, Haryana, India</span>
+        </p>
+        <p class="line line--muted">
+          <span class="prompt">$</span> uptime --experience<br>
+          <span class="out">4 years — infrastructure, automation, deployment reliability</span>
+        </p>
+        <p class="line cursor-line"><span class="prompt">$</span> <span class="cursor" aria-hidden="true">▌</span></p>
+      </div>
+    </div>
+
+    <div class="hero__actions">
+      <a href="#contact" class="btn btn--primary">Get in touch</a>
+      <a href="#projects" class="btn btn--ghost">View projects</a>
+    </div>
+  </section>
+
+  <!-- ===== SIGNATURE PIPELINE STRIP ===== -->
+  <section class="pipeline" aria-label="Site sections shown as a CI/CD pipeline">
+    <div class="pipeline__track">
+      <a href="#about" class="stage" data-stage="lint">
+        <span class="stage__light"></span>
+        <span class="stage__label">about</span>
+      </a>
+      <span class="pipeline__wire"></span>
+      <a href="#stack" class="stage" data-stage="build">
+        <span class="stage__light"></span>
+        <span class="stage__label">stack</span>
+      </a>
+      <span class="pipeline__wire"></span>
+      <a href="#experience" class="stage" data-stage="scan">
+        <span class="stage__light"></span>
+        <span class="stage__label">experience</span>
+      </a>
+      <span class="pipeline__wire"></span>
+      <a href="#projects" class="stage" data-stage="deploy">
+        <span class="stage__light"></span>
+        <span class="stage__label">projects</span>
+      </a>
+      <span class="pipeline__wire"></span>
+      <a href="#contact" class="stage" data-stage="live">
+        <span class="stage__light"></span>
+        <span class="stage__label">contact</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / SUMMARY ===== -->
+  <section class="section" id="about">
+    <p class="eyebrow">// summary</p>
+    <h2 class="section__title">Reliable infrastructure, shipped without drama.</h2>
+    <p class="lead">
+      DevOps Engineer with four years across development and deployment automation — hands-on with AWS,
+      Docker, Kubernetes, Terraform, Ansible, and GitHub Actions. I build CI/CD pipelines, automate
+      infrastructure provisioning, containerize applications, and keep Kubernetes workloads healthy —
+      first as an Application Developer supporting releases and Linux environments, now focused fully
+      on the infrastructure and automation side.
+    </p>
+
+    <div class="metrics">
+      <div class="metric">
+        <span class="metric__value">~40<span class="metric__unit">%</span></span>
+        <span class="metric__label">faster environment setup after moving provisioning to Terraform modules</span>
+      </div>
+      <div class="metric">
+        <span class="metric__value">~35<span class="metric__unit">%</span></span>
+        <span class="metric__label">less release prep effort after automating deploy tasks with Bash + GitHub Actions</span>
+      </div>
+      <div class="metric">
+        <span class="metric__value">~25<span class="metric__unit">%</span></span>
+        <span class="metric__label">smaller Docker images on DevBoard using multi-stage builds</span>
+      </div>
+      <div class="metric">
+        <span class="metric__value">3<span class="metric__unit">tools</span></span>
+        <span class="metric__label">Gitleaks, Hadolint &amp; Semgrep gating every merge before it can ship</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STACK ===== -->
+  <section class="section" id="stack">
+    <p class="eyebrow">// stack</p>
+    <h2 class="section__title">Tools I reach for</h2>
+
+    <div class="stack-grid">
+
+      <div class="stack-card">
+        <div class="stack-card__head">
+          <span class="stack-card__tag">cloud</span>
+          <h3>AWS</h3>
+        </div>
+        <ul class="chip-list">
+          <li>EC2</li><li>IAM</li><li>VPC</li><li>S3</li><li>EBS</li>
+          <li>Route 53</li><li>Security Groups</li><li>Elastic IP</li><li>CloudWatch</li>
+        </ul>
+      </div>
+
+      <div class="stack-card">
+        <div class="stack-card__head">
+          <span class="stack-card__tag">containers</span>
+          <h3>Containerization &amp; Orchestration</h3>
+        </div>
+        <ul class="chip-list">
+          <li>Docker</li><li>Docker Compose</li><li>Docker Hub</li>
+          <li>Kubernetes</li><li>Ingress</li><li>ConfigMaps</li><li>Secrets</li>
+          <li>PV / PVC</li><li>Health Probes</li><li>Kind</li><li>kubectl</li>
+        </ul>
+      </div>
+
+      <div class="stack-card">
+        <div class="stack-card__head">
+          <span class="stack-card__tag">iac</span>
+          <h3>Infrastructure as Code</h3>
+        </div>
+        <ul class="chip-list">
+          <li>Terraform</li><li>Modules</li><li>Remote Backend</li><li>State Mgmt</li>
+          <li>Ansible</li><li>Playbooks</li><li>Roles</li><li>Inventory</li><li>Templates</li>
+        </ul>
+      </div>
+
+      <div class="stack-card">
+        <div class="stack-card__head">
+          <span class="stack-card__tag">devsecops</span>
+          <h3>CI/CD &amp; DevSecOps</h3>
+        </div>
+        <ul class="chip-list">
+          <li>GitHub Actions</li><li>Jenkins</li><li>GitLab CI/CD</li>
+          <li>Gitleaks</li><li>Hadolint</li><li>Semgrep</li><li>Secret Scanning</li>
+        </ul>
+      </div>
+
+      <div class="stack-card">
+        <div class="stack-card__head">
+          <span class="stack-card__tag">systems</span>
+          <h3>Linux &amp; Scripting</h3>
+        </div>
+        <ul class="chip-list">
+          <li>Ubuntu</li><li>CentOS</li><li>Bash / Shell</li><li>Python</li>
+        </ul>
+      </div>
+
+      <div class="stack-card">
+        <div class="stack-card__head">
+          <span class="stack-card__tag">tooling</span>
+          <h3>Version Control &amp; Tools</h3>
+        </div>
+        <ul class="chip-list">
+          <li>Git</li><li>GitHub</li><li>YAML</li><li>JSON</li><li>VS Code</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <p class="eyebrow">// experience</p>
+    <h2 class="section__title">Where I've worked</h2>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <div class="timeline__head">
+            <h3>DevOps Engineer</h3>
+            <span class="timeline__meta">Fennecfox Solutions LLP · Jul 2022 – Present</span>
+          </div>
+          <ul class="timeline__list">
+            <li>Helped get CI/CD working for releases, writing and cleaning up build scripts alongside QA and ops.</li>
+            <li>Used Git and GitHub daily for version control; owned release management — scheduling with QA and keeping a rollback plan ready.</li>
+            <li>Managed Linux servers (Ubuntu and CentOS): environment setup, access, and troubleshooting whatever broke that week.</li>
+            <li>Automated manual deployment steps with Bash and shell scripting, saving time on almost every release.</li>
+            <li>Containerized parts of the app with Docker so local and test environments actually matched production.</li>
+            <li>Debugged deployment issues in staging and prod, usually starting from logs and basic monitoring.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <p class="eyebrow">// projects</p>
+    <h2 class="section__title">Things I've built</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card project-card--feature">
+        <div class="project-card__status">
+          <span class="pulse"></span> deployed
+        </div>
+        <h3>DevBoard</h3>
+        <p class="project-card__stack">Go · React · PostgreSQL · Docker · Kubernetes · GitHub Actions</p>
+        <ul>
+          <li>Multi-stage Docker builds for the Go backend and React frontend to keep image sizes down.</li>
+          <li>Backend, frontend, and PostgreSQL run together locally with Docker Compose.</li>
+          <li>Deployed to Kubernetes — Deployments, Services, Namespaces — with ConfigMaps and Secrets for config and credentials.</li>
+          <li>Persistent Volumes so the database survives pod restarts.</li>
+          <li>GitHub Actions pipeline builds and publishes images automatically, gated by Gitleaks and Hadolint.</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__status">
+          <span class="pulse"></span> provisioned
+        </div>
+        <h3>AWS + Terraform</h3>
+        <p class="project-card__stack">Terraform · AWS · Remote State</p>
+        <ul>
+          <li>Provisioned EC2, VPC, S3, and security groups through modular Terraform with remote state.</li>
+          <li>The project behind the ~40% drop in provisioning time.</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__status">
+          <span class="pulse"></span> running
+        </div>
+        <h3>Kubernetes Three-Tier App</h3>
+        <p class="project-card__stack">Kubernetes · Ingress · ConfigMaps</p>
+        <ul>
+          <li>Deployed a frontend / backend / database app with Ingress routing.</li>
+          <li>ConfigMaps and Persistent Volumes handling the data layer.</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__status">
+          <span class="pulse"></span> automated
+        </div>
+        <h3>Ansible Server Automation</h3>
+        <p class="project-card__stack">Ansible · Playbooks · Roles</p>
+        <ul>
+          <li>Playbooks and roles automating server configuration.</li>
+          <li>Separate dev and prod inventories kept environments isolated and repeatable.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section section--tight" id="education">
+    <p class="eyebrow">// education</p>
+    <div class="edu-row">
+      <div>
+        <h3 class="edu-row__degree">Bachelor of Computer Applications (BCA)</h3>
+        <p class="edu-row__school">Himalayan Garhwal University, Pauri Garhwal, Uttarakhand</p>
+      </div>
+      <span class="edu-row__year">2018 – 2021</span>
+    </div>
+    <p class="edu-row__coursework">Operating Systems · Computer Networks · DBMS · Data Structures · Software Engineering</p>
+  </section>
+
+  <!-- ===== CONTACT / FOOTER ===== -->
+  <section class="section contact" id="contact">
+    <div class="deploy-status">
+      <span class="pulse pulse--lg"></span>
+      <span>deploy status: <strong>live</strong></span>
+    </div>
+    <h2 class="section__title">Let's build something reliable.</h2>
+    <p class="lead">Open to DevOps and cloud infrastructure roles. The fastest way to reach me:</p>
+
+    <div class="contact-grid">
+      <!-- TODO: replace placeholders with your real details -->
+      <a class="contact-link" href="mailto:your.email@example.com">
+        <span class="contact-link__label">email</span>
+        <span class="contact-link__value">your.email@example.com</span>
+      </a>
+      <a class="contact-link" href="https://github.com/your-github" target="_blank" rel="noopener">
+        <span class="contact-link__label">github</span>
+        <span class="contact-link__value">github.com/your-github</span>
+      </a>
+      <a class="contact-link" href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">
+        <span class="contact-link__label">linkedin</span>
+        <span class="contact-link__value">linkedin.com/in/your-linkedin</span>
+      </a>
+      <div class="contact-link contact-link--static">
+        <span class="contact-link__label">location</span>
+        <span class="contact-link__value">Gurgaon, Haryana, India</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built by Fahad Jaseem · <span id="year"></span></p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
